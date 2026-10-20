@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @media print {
+    /* Hide all non-printable UI elements */
+    .no-print, header, nav, footer, .search-bar, .filter-controls, button:not(.printable-content button) {
+      display: none !important;
+    }
+
+    body {
+      background: #ffffff !important;
+      color: #000000 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .printable-sheet {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    .printable-sheet img {
+      max-width: 100% !important;
+      height: auto !important;
+      page-break-inside: avoid;
+    }
+
+    .page-break {
+      page-break-after: always;
+    }
+  }
+}

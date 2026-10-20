@@ -1,0 +1,6 @@
+{
+  "name": "Kit 115 Atividades de Matemática",
+  "description": "Acervo digital de atividades de Matemática para o 4º e 5º ano do Ensino Fundamental para visualização, impressão e edição.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
